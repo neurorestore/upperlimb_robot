@@ -1,0 +1,9 @@
+Code to read files
+
+f = adi.readFile('name file');
+channel = f.getChannelByName('name channel'); % ex: Biceps
+raw_ch_data = channel.getData(1); %Get data from the first record
+
+
+Cite As:
+Jim Hokanson (2020). ADInstruments (LabChart) SDK (https://github.com/JimHokanson/adinstruments_sdk_matlab), GitHub. Retrieved August 24, 2020.
