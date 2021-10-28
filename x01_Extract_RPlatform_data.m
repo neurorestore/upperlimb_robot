@@ -16,7 +16,8 @@ ratio = fS_VICON/fS_robot;
 %% .tdms file save struct
 [fname_robot, pname_robot] = uigetfile({'*.tdms','Robot Files (*.tdms)'}, 'Choose Files:','MultiSelect', 'on'); % Select File
 filenameR = [pname_robot,fname_robot];
-cd([Path,'\v2p5'])
+cd([Path,'/v2p5'])
+addpath(genpath(Path));
 Data = TDMS_getStruct(filenameR);
 Data.Recorded_Data.fS_robot = fS_robot; %record at 100 Hz
 cd(Path)
